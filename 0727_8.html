@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document URL using JS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .img{
+            height:200px;
+            width:200px;
+        }
+    </style>
+    <script>
+        let num = 0;
+
+        let pics_src = new Array("https://yumemaga.com/wp-content/uploads/2022/02/848CC40B-F984-4B9E-B923-0648C99D2FAC-768x833.jpeg"
+        , "https://yumemaga.com/wp-content/uploads/2022/02/BD8540B6-6FD0-4F20-9AA8-133560A380CF-768x878.jpeg"
+        ,"https://yumemaga.com/wp-content/uploads/2022/02/617FCC8C-61A3-448A-8B8B-7A0625EECAED-768x876.jpeg"
+        , "https://yumemaga.com/wp-content/uploads/2022/02/BF6BBB4A-A3EA-4AF8-93BD-D5838376F894-768x825.jpeg"
+        ,"https://yumemaga.com/wp-content/uploads/2022/02/93B63F06-F86F-4DD7-A336-4CA4E1A1CD96.jpeg")
+
+        function myfunction ()
+        {
+            if(num == 4)
+            {
+                num = 0;
+            }
+            else
+            {
+                num ++;
+            }
+            document.getElementById("img").src = pics_src[num];
+           
+        }
+
+    </script>
+
+</head>
+<body>
+
+    <form>
+        <input type="button" id="btn1" value="Change" onclick="myfunction()"></input>
+        <input type="image" class="img" id="img" src="https://yumemaga.com/wp-content/uploads/2022/02/848CC40B-F984-4B9E-B923-0648C99D2FAC-768x833.jpeg"/>
+
+    </form>
+    
+</body>
+</html>
