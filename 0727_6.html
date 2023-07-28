@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document URL using JS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        label{
+            display: inline-block;
+            text-align: right;
+            width: 150px;
+        }
+    </style>
+    <script>
+        function myfunction ()
+        {
+            var uame = document.getElementById("username").value;
+            var pwd = document.getElementById("password").value;
+
+            var newPassword = pwd + uame.slice(uame.length-4);
+
+            document.write("Userbane is " + uame); 
+            document.write("<br>"); 
+            document.write("New Password is " + newPassword); 
+
+       
+            
+        }
+
+    </script>
+
+</head>
+<body>
+
+    <form>
+        <label>Username</label>
+        <input type="text" id="username" name="username"/>
+
+        <br>
+
+        <label>Password</label>
+        <input type="text" id="password" name="password"/>
+
+        <br><br>
+        <input type="button" id="btn1" value="submit" onclick="myfunction()"></input>
+
+    </form>
+    
+</body>
+</html>

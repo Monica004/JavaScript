@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document URL using JS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function myfunction ()
+        {
+            var fName = document.getElementById("fName").value;
+
+            //length
+            document.write(fName.length);
+            document.write("<br>");
+
+
+            //slice
+            var slicestr = fName.slice(1,3);
+            document.write(slicestr);
+            document.write("<br>");
+
+            //substring
+            var substr1 = fName.substring(1,3);
+            document.write(substr1);
+            document.write("<br>");
+
+            //replace, replaceAll
+            var names = "Hi from Vancouver, Good evening Vancouver";
+            var result = names.replaceAll("Vancouver", "Calgary");
+            document.write(result);
+            document.write("<br>");
+
+            //toUpperCase
+            document.write(fName.toUpperCase());
+            document.write("<br>");
+
+            //toLowerCase
+            document.write(fName.toLowerCase());
+            document.write("<br>");
+
+            //reverse, join
+            const reverse = fName.split('').reverse().join('');
+            document.write(reverse);
+            document.write("<br>");
+
+            for(var i=fName.length; i>=0, i--;)
+            {
+                document.write(fName[i]);
+            }
+
+        }
+
+    </script>
+
+</head>
+<body>
+
+    <form>
+        <labrl>Enter Your FirstName</labrl>
+        <input type="text" id="fName" name="fName"/>
+
+        <br>
+
+        <input type="button" id="btn1" value="submit" onclick="myfunction()"></input>
+
+    </form>
+    
+</body>
+</html>
