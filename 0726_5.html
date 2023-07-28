@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document URL using JS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function myfunction ()
+        {
+
+            var a = Number(document.getElementById("num1").value);
+            var b = Number(document.getElementById("num2").value);
+
+            for(var i = a+3; i<=b; i=i+3)
+            {
+                document.write(i + "<br>");
+            }
+
+            // if(a == b)
+            // {
+            //     document.write("Both the numbers are equal");
+            // }
+            // else
+            // {
+            //     document.write("Both the numbers are not equal");
+            // }
+
+            // c = a;
+            // a = b;
+            // b = c;
+
+            // document.write("The new value of Number1 is" + a + " <br>" + " The new value of Number2 is" + b);
+        }
+
+    </script>
+
+</head>
+<body>
+
+    <form>
+        <labrl>Number1</labrl>
+        <input type="number" id="num1" name="num1"/>
+
+        <br>
+
+        <labrl>Number2</labrl>
+        <input type="number" id="num2" name="num2"/>
+
+        <br>
+
+        <input type="button" id="btn1" value="submit" onclick="myfunction()"></input>
+
+    </form>
+    
+</body>
+</html>

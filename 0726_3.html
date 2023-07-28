@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document URL using JS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function myfunction ()
+        {
+            const num = document.getElementById("num1").value;
+
+            for(let i = 0; i <= 10 ; i++)
+            {
+                document.write(num + "×" +  i + "=" + num * i + "<br>");
+            }
+        }
+
+    </script>
+
+</head>
+<body>
+
+    <form>
+        <input type="number" id="num1" name="num1"/>
+        <input type="button" id="btn1" value="submit" onclick="myfunction()"></input>
+
+    </form>
+    
+</body>
+</html>

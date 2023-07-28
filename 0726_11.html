@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document URL using JS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function myfunction ()
+        {
+            // var num = document.getElementById("num1").value;
+            // var result = true;
+            // const len = num.length;
+
+            // for (let i = 0; i < len / 2; i++)
+            // {
+            //     if (num[i] != num[len - 1 - i])
+            //     {
+            //         result =  false;
+            //     }
+            // }
+            // document.write(result);
+
+            var rem, temp, final = 0;
+            var number = Number(document.getElementById("num1").value);
+
+            temp = number;
+            while(number > 0)
+            {
+                rem = number%10;
+                number = parseInt(number/10);
+                final = final * 10 + rem;
+                console.log(final)
+            }
+
+            if(number = final)
+            {
+
+            }
+
+        }
+
+    </script>
+
+</head>
+<body>
+
+    <form>
+        <labrl>Enter Number</labrl>
+        <input type="number" id="num1" name="num1"/>
+
+        <br>
+
+        <input type="button" id="btn1" value="submit" onclick="myfunction()"></input>
+
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document URL using JS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function myfunction ()
+        {
+
+            var a = Number(document.getElementById("num1").value);
+
+            if(a == 0)
+            {
+                document.write("Enter some value in the Year field");
+            }
+            else if(a % 4 == 0)
+            {
+                document.write("Leap Year");
+            }
+            else
+            {
+                document.write("Not a Leap Year");
+            }
+        }
+
+    </script>
+
+</head>
+<body>
+
+    <form>
+        <labrl>Enter a year</labrl>
+        <input type="number" id="num1" name="num1"/>
+
+        <br>
+
+        <input type="button" id="btn1" value="submit" onclick="myfunction()"></input>
+
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document URL using JS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+
+        var resultTemp;
+        function myfunction ()
+        {
+            var celciusTemp = document.getElementById("num1").value;    //25 degree celcius
+            resultTemp = celciusTemp * 1.8 + 32;
+            document.write(resultTemp);
+        }
+
+    </script>
+
+</head>
+<body>
+
+    <form>
+        <input type="number" id="num1" name="num1"/>
+        <input type="button" id="btn1" value="submit" onclick="myfunction()"></input>
+
+    </form>
+
+    
+
+    
+    
+</body>
+</html>

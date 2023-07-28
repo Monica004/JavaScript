@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document URL using JS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function myfunction ()
+        {
+
+            var fName = document.getElementById("text1").value;
+
+            for(var i = 0; i < fName.length; i++)
+            {
+                document.write(fName[i]);
+                document.write("<br>");
+            }
+        }
+
+    </script>
+
+</head>
+<body>
+
+    <form>
+        <labrl>Enter FirstName</labrl>
+        <input type="text" id="text1" name="text1"/>
+
+        <br>
+
+        <input type="button" id="btn1" value="submit" onclick="myfunction()"></input>
+
+    </form>
+    
+</body>
+</html>
